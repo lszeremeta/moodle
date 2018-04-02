@@ -89,7 +89,7 @@ class api {
         $endpoints = [
             'authorization_endpoint' => 'https://www.facebook.com/v2.8/dialog/oauth',
             'token_endpoint' => 'https://graph.facebook.com/v2.8/oauth/access_token',
-            'userinfo_endpoint' => 'https://graph.facebook.com/v2.8/me?fields=id,first_name,last_name,link,picture,name,email'
+            'userinfo_endpoint' => 'https://graph.facebook.com/v2.8/me?fields=id,first_name,last_name,link,picture.type(large),name,email'
         ];
 
         foreach ($endpoints as $name => $url) {
